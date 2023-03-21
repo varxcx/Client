@@ -11,18 +11,23 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     
     var numberOfRows: Int?
     var videoURL: URL?
-    @IBOutlet weak var tableView: UITableView!
+    var tableView: UITableView!
     static var tbv: UITableView!
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        tableView = UITableView(frame: view.bounds,style: .plain)
+        view.addSubview(tableView)
         ViewController.tbv = self.tableView
         self.tableView.delegate = self
         self.tableView.dataSource = self
         
         DataFetch.fetchData {
             self.numberOfRows = DataFetch.dataModels[0].content.count + 1
-            self.tableView.reloadData()
+            
+            DispatchQueue.main.async {
+                self.tableView.reloadData()
+            }
+           
            }
         
        
@@ -57,32 +62,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
             cell.selectionStyle = .none
             
             DataFetch.fetchData {
-                let title = DataFetch.dataModels[0].content[indexPath.row-1].title
-                cell.title.text = title
-        
-                let imageURL = DataFetch.dataModels[0].content[indexPath.row-1].imageURL
-                cell.desImage.loadFrom(URLAddress: imageURL)
-                let description = DataFetch.dataModels[0].content[indexPath.row-1].description
-                cell.des.text = description
-                if indexPath.row % 2 == 1 {
-                    let backcolor = DataFetch.dataModels[0].content[indexPath.row-1].backgroundColor
-                    cell.backgroundColor = UIColor(named: backcolor)
-                } else {
-                    cell.backgroundColor = .secondarySystemBackground
-                }
-                
                 DispatchQueue.main.async {
-                    self.tableView.reloadData()
-                }
-               
-            }
-            
-            return cell
-        } else {
-           
-            let cell = (tableView.dequeueReusableCell(withIdentifier: "InfoCell", for: indexPath) as? InfoTableViewCell)!
-            cell.selectionStyle = .none
-                DataFetch.fetchData {
                     let title = DataFetch.dataModels[0].content[indexPath.row-1].title
                     cell.title.text = title
             
@@ -96,10 +76,38 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
                     } else {
                         cell.backgroundColor = .secondarySystemBackground
                     }
-                    
+                    self.tableView.reloadData()
+                }
+                                
+                
+               
+            }
+            
+            return cell
+        } else {
+           
+            let cell = (tableView.dequeueReusableCell(withIdentifier: "InfoCell", for: indexPath) as? InfoTableViewCell)!
+            cell.selectionStyle = .none
+                DataFetch.fetchData {
                     DispatchQueue.main.async {
-                        self.tableView.reloadData()
+                        let title = DataFetch.dataModels[0].content[indexPath.row-1].title
+                        cell.title.text = title
+                
+                        let imageURL = DataFetch.dataModels[0].content[indexPath.row-1].imageURL
+                        cell.desImage.loadFrom(URLAddress: imageURL)
+                        let description = DataFetch.dataModels[0].content[indexPath.row-1].description
+                        cell.des.text = description
+                        if indexPath.row % 2 == 1 {
+                            let backcolor = DataFetch.dataModels[0].content[indexPath.row-1].backgroundColor
+                            cell.backgroundColor = UIColor(named: backcolor)
+                        } else {
+                            cell.backgroundColor = .secondarySystemBackground
+                        }
+                        
+                       
+                            self.tableView.reloadData()
                     }
+                    
                    
                 }
                 

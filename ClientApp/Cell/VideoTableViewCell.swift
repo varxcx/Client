@@ -26,15 +26,17 @@ class VideoTableViewCell: UITableViewCell {
         video.layer.masksToBounds =  true
         
         DataFetch.fetchData {
-            let title = DataFetch.dataModels[0].videoTitle
-            self.title.text = title
-            let url = DataFetch.dataModels[0].videoURL
-            self.videoPlayer(view: self.video, videoURL: URL(string: url)!)
-            let description = DataFetch.dataModels[0].videoDescription
-            self.des.text = description
-            let titleDescription = DataFetch.dataModels[0].titleDescription
-            self.titleDescription.text = titleDescription
-            ViewController.tbv.reloadData()
+            DispatchQueue.main.async {
+                let title = DataFetch.dataModels[0].videoTitle
+                self.title.text = title
+                let url = DataFetch.dataModels[0].videoURL
+                self.videoPlayer(view: self.video, videoURL: URL(string: url)!)
+                let description = DataFetch.dataModels[0].videoDescription
+                self.des.text = description
+                let titleDescription = DataFetch.dataModels[0].titleDescription
+                self.titleDescription.text = titleDescription
+                ViewController.tbv.reloadData()
+            }
         }
         
         
