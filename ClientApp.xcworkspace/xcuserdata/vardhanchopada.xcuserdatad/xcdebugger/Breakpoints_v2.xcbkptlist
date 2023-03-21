@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "AF55D88D-04D5-493A-A4EC-8D30BE22E77E"
+   type = "0"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "BD14574E-DAAF-4910-AAC6-471DD8A89EAC"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ClientApp/ViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "28"
+            endingLineNumber = "28"
+            landmarkName = "viewDidLoad()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "BD14574E-DAAF-4910-AAC6-471DD8A89EAC - 58bd268429237821"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ClientApp.ViewController.viewDidLoad() -&gt; ()"
+                  moduleName = "ClientApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/vardhanchopada/Downloads/ClientApp/ClientApp/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "28"
+                  endingLineNumber = "28"
+                  offsetFromSymbolStart = "736">
+               </Location>
+               <Location
+                  uuid = "BD14574E-DAAF-4910-AAC6-471DD8A89EAC - f3d191104438ef9f"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #2 (Swift.Optional&lt;Foundation.URL&gt;) -&gt; () in ClientApp.ViewController.viewDidLoad() -&gt; ()"
+                  moduleName = "ClientApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/vardhanchopada/Downloads/ClientApp/ClientApp/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "29"
+                  endingLineNumber = "29"
+                  offsetFromSymbolStart = "216">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "91B25E90-301F-4DCF-B78F-3044554FE8B8"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ClientApp/Cell/VideoTableViewCell.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "41"
+            endingLineNumber = "41"
+            landmarkName = "awakeFromNib()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "91B25E90-301F-4DCF-B78F-3044554FE8B8 - 2f5b6da8eb47dfab"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ClientApp.VideoTableViewCell.awakeFromNib() -&gt; ()"
+                  moduleName = "ClientApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/vardhanchopada/Downloads/ClientApp/ClientApp/Cell/VideoTableViewCell.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "41"
+                  endingLineNumber = "41"
+                  offsetFromSymbolStart = "660">
+               </Location>
+               <Location
+                  uuid = "91B25E90-301F-4DCF-B78F-3044554FE8B8 - 772c0ebb55b7b2d7"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #2 () -&gt; () in ClientApp.VideoTableViewCell.awakeFromNib() -&gt; ()"
+                  moduleName = "ClientApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/vardhanchopada/Downloads/ClientApp/ClientApp/Cell/VideoTableViewCell.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "42"
+                  endingLineNumber = "42"
+                  offsetFromSymbolStart = "36">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

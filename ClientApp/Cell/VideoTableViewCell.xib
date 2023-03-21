@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="VideoCell" rowHeight="329" id="KGk-i7-Jjw" customClass="VideoTableViewCell" customModule="ClientApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="336" height="312"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="336" height="312"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fai-IF-0Ps">
+                        <rect key="frame" x="20" y="15.333333333333334" width="296" height="0.0"/>
+                        <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="28"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="y8d-gQ-jNF">
+                        <rect key="frame" x="84" y="140" width="169" height="128"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="128" id="Ggu-3I-hLQ"/>
+                            <constraint firstAttribute="width" constant="169" id="Wz7-7P-hXn"/>
+                        </constraints>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hpu-MC-3KW">
+                        <rect key="frame" x="20" y="290" width="296" height="0.0"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="249" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9vQ-Fu-ehU">
+                        <rect key="frame" x="20" y="22.333333333333336" width="296" height="86.666666666666657"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="9vQ-Fu-ehU" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" symbolic="YES" id="8YO-J6-5Xv"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="Hpu-MC-3KW" secondAttribute="bottom" constant="11" id="BjS-Mh-zBW"/>
+                    <constraint firstItem="y8d-gQ-jNF" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" constant="-63" id="Jrf-Zc-RqM"/>
+                    <constraint firstItem="Hpu-MC-3KW" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="Ka0-Xj-rGS"/>
+                    <constraint firstItem="fai-IF-0Ps" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" symbolic="YES" id="Qe9-B5-flK"/>
+                    <constraint firstItem="fai-IF-0Ps" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="15.33" id="RPI-Sf-pht"/>
+                    <constraint firstItem="Hpu-MC-3KW" firstAttribute="top" secondItem="y8d-gQ-jNF" secondAttribute="bottom" constant="22" id="UwW-gO-aTe"/>
+                    <constraint firstItem="9vQ-Fu-ehU" firstAttribute="top" secondItem="fai-IF-0Ps" secondAttribute="bottom" constant="7" id="ffg-HS-wGm"/>
+                    <constraint firstItem="y8d-gQ-jNF" firstAttribute="top" secondItem="9vQ-Fu-ehU" secondAttribute="bottom" constant="31" id="gUj-SQ-Rk4"/>
+                    <constraint firstAttribute="trailing" secondItem="9vQ-Fu-ehU" secondAttribute="trailing" constant="20" symbolic="YES" id="lKJ-gA-2Hv"/>
+                    <constraint firstItem="y8d-gQ-jNF" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="64" id="qE5-69-g0R"/>
+                    <constraint firstAttribute="trailing" secondItem="fai-IF-0Ps" secondAttribute="trailing" constant="20" symbolic="YES" id="qfo-rD-ApE"/>
+                    <constraint firstItem="Hpu-MC-3KW" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" id="sjk-fz-Uni"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="des" destination="Hpu-MC-3KW" id="g3a-Eu-z4J"/>
+                <outlet property="title" destination="fai-IF-0Ps" id="zDQ-KR-amX"/>
+                <outlet property="titleDescription" destination="9vQ-Fu-ehU" id="Tws-FI-K1n"/>
+                <outlet property="video" destination="y8d-gQ-jNF" id="ccn-17-so0"/>
+            </connections>
+            <point key="canvasLocation" x="19.847328244274809" y="97.183098591549296"/>
+        </tableViewCell>
+    </objects>
+</document>
